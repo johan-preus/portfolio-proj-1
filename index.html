@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
 
 
     <title>Document</title>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="index.html">Tiger!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="about.html">About</a>
-            <a class="nav-item nav-link" href="contact.html">Contact</a>
-            <a class="nav-item nav-link" href="blogPage.html">Blog</a>
-          </div>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="blogPage.html">Blog</a>
+                <a class="nav-item nav-link" href="podcast.html">Podcast</a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-      
-    
-    <div class="container">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron jumbotron-fluid text-light" id="indexJumbotron">
+                    <div class="container">
+                      <h1 class="display-4">Tiger Podcast and Blog</h1>
+                      <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore atque ducimus incidunt id, excepturi impedit voluptatem sapiente nam deserunt officiis.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
         <div class="row">
             <h1>Hello World!</h1>
-            <p>Content goes here! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus hic sit consequatur officia eos modi accusamus nobis, excepturi, perspiciatis dolorem suscipit facere nisi ratione numquam necessitatibus recusandae vitae earum ipsum alias pariatur placeat a porro. Unde magnam corporis quaerat fuga et debitis amet ex nobis provident, doloribus magni dolor voluptates.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sequi quibusdam distinctio harum ex
+                odio illum, et officiis nihil blanditiis. Nemo repudiandae iste nulla eos ipsum odit perferendis maiores
+                reiciendis neque quos amet, iure quo voluptates, hic ab esse similique, doloribus aspernatur maxime
+                temporibus sed. Laudantium voluptatum nam, vero dolores minima quos eum non molestiae mollitia optio
+                unde sed veritatis ut quod in provident aperiam eveniet illo praesentium quam fugiat ea. Sed,
+                voluptatibus. Atque, nostrum saepe iure facilis dolores iste enim. Maiores autem maxime cum quo
+                voluptate dolores. Id, cumque sunt mollitia praesentium sed perspiciatis eum minus dignissimos.
+                Recusandae, nulla!</p>
         </div>
 
     </div>
-    
+
     <footer>
         <div class="container">
             <div class="row">
@@ -52,9 +71,9 @@
             </div>
         </div>
     </footer>
-    
 
-    
+
+
 
 
 
@@ -62,4 +81,5 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
