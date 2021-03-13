@@ -3,12 +3,22 @@ body {
 
 }
 
-#indexJumbotron {
+html, body {
+    height: 100%;
+}
+
+
+
+#homeJumbotron {
     background-image: url(../img/img3.jpg);
     /* background-color: #fff; */
     background-repeat: no-repeat; 
     background-size: cover; 
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
     
 }
 
@@ -16,5 +26,30 @@ body {
     background-color: #303030
 }
 
+#homeNavbar {
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
 
 
+
+.dropdown-menu {
+    text-shadow: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+.footerLink, .footerSocial {
+    font-size: 1.5rem;
+}
+
+hr {
+    border: 1px solid white;
+}

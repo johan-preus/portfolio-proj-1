@@ -14,7 +14,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
       <a class="navbar-brand" href="index.html">Tiger!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,15 +30,47 @@
         </div>
     </nav>
 
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb py-1">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Contact</li>
-        </ol>
-      </nav>
-    
-    <h1>Hello World!</h1>
-    <p>Content goes here! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus hic sit consequatur officia eos modi accusamus nobis, excepturi, perspiciatis dolorem suscipit facere nisi ratione numquam necessitatibus recusandae vitae earum ipsum alias pariatur placeat a porro. Unde magnam corporis quaerat fuga et debitis amet ex nobis provident, doloribus magni dolor voluptates.</p>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-light mb-3">
+                <h1 class="text-center mb-3">Give Feedback</h1>
+                <p>We'd love to hear from you! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae earum maxime in dicta voluptas mollitia neque cum dolorem accusantium.</p>
+            </div>
+            <div class="col-md-10 text-light">
+                <form action="submit">
+                    <div class="form-group row">
+                        <label class="col-md-2 col-form-label" for="name">Name</label>
+                        <div class="col-md-10">
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                        <div class="col-md-10">
+                            <textarea name="feedback" id="feedback" class="form-control" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-10 offset-md-2">
+                            <button class="btn btn-primary" type="submit">Sumbit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center text-light">
+                <h3>Or, contact by email at: <a href="mailto:email@gmail.com">email@gmail.com</a></h3>
+            </div>
+        </div>
+    </div>
+
 
 
 

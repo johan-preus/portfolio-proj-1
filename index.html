@@ -7,66 +7,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 
 
     <title>Document</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="homeNavbar" class="navbar fixed-top navbar-expand-md navbar-dark mb-5">
         <a class="navbar-brand" href="index.html">Tiger!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="blogPage.html">Blog</a>
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link d-block d-md-none" href="blogPage.html">Blog</a>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle d-none d-md-block" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="news.html">News</a>
+                        <a class="dropdown-item" href="interviews.html">Interviews</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="allPage.html">All</a>
+                    </div>
+                </div>
                 <a class="nav-item nav-link" href="podcast.html">Podcast</a>
                 <a class="nav-item nav-link" href="about.html">About</a>
                 <a class="nav-item nav-link" href="contact.html">Contact</a>
             </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
     </nav>
+
+    <div class="jumbotron jumbotron-fluid text-light" id="homeJumbotron">
+        <div class="container">
+            <h1 class="display-3">Tiger Podcast and Blog</h1>
+            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore atque ducimus incidunt id,
+                excepturi impedit voluptatem sapiente nam deserunt officiis.</p>
+        </div>
+    </div>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <div class="jumbotron jumbotron-fluid text-light" id="indexJumbotron">
+                <!-- <div class="jumbotron jumbotron-fluid text-light" id="indexJumbotron">
                     <div class="container">
-                      <h1 class="display-4">Tiger Podcast and Blog</h1>
+                      <h1 class="display-3">Tiger Podcast and Blog</h1>
                       <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore atque ducimus incidunt id, excepturi impedit voluptatem sapiente nam deserunt officiis.</p>
                     </div>
-                  </div>
+                </div> -->
             </div>
         </div>
         <div class="row">
-            <h1>Hello World!</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sequi quibusdam distinctio harum ex
-                odio illum, et officiis nihil blanditiis. Nemo repudiandae iste nulla eos ipsum odit perferendis maiores
-                reiciendis neque quos amet, iure quo voluptates, hic ab esse similique, doloribus aspernatur maxime
-                temporibus sed. Laudantium voluptatum nam, vero dolores minima quos eum non molestiae mollitia optio
-                unde sed veritatis ut quod in provident aperiam eveniet illo praesentium quam fugiat ea. Sed,
-                voluptatibus. Atque, nostrum saepe iure facilis dolores iste enim. Maiores autem maxime cum quo
-                voluptate dolores. Id, cumque sunt mollitia praesentium sed perspiciatis eum minus dignissimos.
-                Recusandae, nulla!</p>
+            <div class="col">
+                <div class="card-deck">
+                    <div class="col-6 col-md-4">
+                        <a class="card text-decoration-none text-dark" href="allPage.html">
+                            <div class="card-body">
+                                <h5 class="card-title">Blog Title</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                                <button class="btn btn-primary">Read</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <a class="card text-decoration-none text-dark" href="allPage.html">
+                            <div class="card-body">
+                                <h5 class="card-title">Blog Title</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                                <button class="btn btn-primary">Read</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 d-none d-md-block">
+                        <a class="card text-decoration-none text-dark" href="allPage.html">
+                            <div class="card-body">
+                                <h5 class="card-title">Blog Title</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                                <button class="btn btn-primary">Read</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        <div class="row my-5">
+            <div class="col">
+                <div class="card-deck">
+                    <div class="col-6 col-md-4">
+                        <a class="card text-decoration-none text-dark" href="podcast.html">
+                            <div class="card-body">
+                                <h5 class="card-title">Podcast Title</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                                <button class="btn btn-primary">Listen</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <a class="card text-decoration-none text-dark" href="podcast.html">
+                            <div class="card-body">
+                                <h5 class="card-title">Podcast Title</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                                <button class="btn btn-primary">Listen</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 d-none d-md-block">
+                        <a class="card text-decoration-none text-dark" href="podcast.html">
+                            <div class="card-body">
+                                <h5 class="card-title">Podcast Title</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                                <button class="btn btn-primary">Listen</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        <div class="container">
+    <footer class="mt-auto mb-5">
+        <div class="container text-center text-light">
             <div class="row">
                 <div class="col-4">
-                    Links
+                    <h5>Links</h5>
+                    <a class="btn footerLink" href="https://spotify.com"><i class="fa fa-spotify"></i></a>
+                    <a class="btn footerLink" href="https://podcasts.apple.com/us/genre/podcasts/id26"><i
+                            class="fa fa-apple"></i></a>
+                    <a class="btn footerLink" href="https://youtube.com"><i class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-4">
-                    Social
+                    <h5>Social</h5>
+                    <a class="btn footerSocial" href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn footerSocial" href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn footerSocial" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
                 </div>
                 <div class="col-4">
-                    Contact
+                    <h5>Contact Us</h5>
+                    <a href="mailto:email@gmail.com">email@gmail.com</a>
+                    <br>
+                    <a href="contact.html">Contact Page</a>
                 </div>
             </div>
         </div>
