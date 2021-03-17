@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100"> 
 
     <nav id="homeNavbar" class="navbar fixed-top navbar-expand-md navbar-dark mb-5">
         <a class="navbar-brand" href="index.html">Tiger!</a>
@@ -27,9 +27,9 @@
                 <a class="nav-item nav-link d-block d-md-none" href="blogPage.html">Blog</a>
 
                 <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle d-none d-md-block" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link d-none d-md-block" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Blog
+                        Blog <span><i class="fa fa-sort-desc"></i></span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="news.html">News</a>
@@ -57,80 +57,82 @@
         </div>
     </div>
 
+
     <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <!-- <div class="jumbotron jumbotron-fluid text-light" id="indexJumbotron">
-                    <div class="container">
-                      <h1 class="display-3">Tiger Podcast and Blog</h1>
-                      <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore atque ducimus incidunt id, excepturi impedit voluptatem sapiente nam deserunt officiis.</p>
+        <div class="card-deck">
+            <div class="col-sm-6 col-lg-4">
+                <div class="card text-decoration-none text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                        <a href="allPage.html" class="btn btn-primary">Read</a>
                     </div>
-                </div> -->
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="card-deck">
-                    <div class="col-6 col-md-4">
-                        <a class="card text-decoration-none text-dark" href="allPage.html">
-                            <div class="card-body">
-                                <h5 class="card-title">Blog Title</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
-                                <button class="btn btn-primary">Read</button>
-                            </div>
-                        </a>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card text-decoration-none text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                        <a href="allPage.html" class="btn btn-primary">Read</a>
                     </div>
-                    <div class="col-6 col-md-4">
-                        <a class="card text-decoration-none text-dark" href="allPage.html">
-                            <div class="card-body">
-                                <h5 class="card-title">Blog Title</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
-                                <button class="btn btn-primary">Read</button>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-4 d-none d-md-block">
-                        <a class="card text-decoration-none text-dark" href="allPage.html">
-                            <div class="card-body">
-                                <h5 class="card-title">Blog Title</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
-                                <button class="btn btn-primary">Read</button>
-                            </div>
-                        </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card text-decoration-none text-dark d-none d-lg-block">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                        <a href="allPage.html" class="btn btn-primary">Read</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row my-5">
-            <div class="col">
-                <div class="card-deck">
-                    <div class="col-6 col-md-4">
-                        <a class="card text-decoration-none text-dark" href="podcast.html">
-                            <div class="card-body">
-                                <h5 class="card-title">Podcast Title</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
-                                <button class="btn btn-primary">Listen</button>
-                            </div>
-                        </a>
+
+        <!-- .d-flex class is necessary to use .ml-auto -->
+        <div class="container-fluid d-flex">
+            <div class="row d-flex ml-auto">
+                <div class="col mt-3">
+                    <a href="blogPage.html">view more blog posts</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck mt-5">
+            <div class="col-sm-6 col-lg-4">
+                <div class="card text-decoration-none text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Podcast Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                        <a href="podcast.html" class="btn btn-primary">Listen</a>
                     </div>
-                    <div class="col-6 col-md-4">
-                        <a class="card text-decoration-none text-dark" href="podcast.html">
-                            <div class="card-body">
-                                <h5 class="card-title">Podcast Title</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
-                                <button class="btn btn-primary">Listen</button>
-                            </div>
-                        </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="card text-decoration-none text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Podcast Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                        <a href="podcast.html" class="btn btn-primary">Listen</a>
                     </div>
-                    <div class="col-6 col-md-4 d-none d-md-block">
-                        <a class="card text-decoration-none text-dark" href="podcast.html">
-                            <div class="card-body">
-                                <h5 class="card-title">Podcast Title</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
-                                <button class="btn btn-primary">Listen</button>
-                            </div>
-                        </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card text-decoration-none text-dark d-none d-lg-block">
+                    <div class="card-body">
+                        <h5 class="card-title">Podcast Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.</p>
+                        <a href="podcast.html" class="btn btn-primary">Listen</a>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- .d-flex class is necessary to use .ml-auto -->
+        <div class="container-fluid d-flex">
+            <div class="row d-flex ml-auto">
+                <div class="col mt-3">
+                    <a href="blogPage.html">view more blog posts</a>
                 </div>
             </div>
         </div>
