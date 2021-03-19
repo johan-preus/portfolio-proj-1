@@ -7,32 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 
 
     <title>Document</title>
 </head>
 
-<body>
-
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+<body class="d-flex flex-column min-vh-100"> 
+    <nav id="homeNavbar" class="navbar fixed-top navbar-expand-md navbar-dark mb-5 bg-dark">
         <a class="navbar-brand" href="index.html">Tiger!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="blogPage.html">Blog</a>
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link d-block d-md-none" href="blogPage.html">Blog</a>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link d-none d-md-block" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog <span><i class="fa fa-sort-desc"></i></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="news.html">News</a>
+                        <a class="dropdown-item" href="interviews.html">Interviews</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="allPage.html">All</a>
+                    </div>
+                </div>
                 <a class="nav-item nav-link" href="podcast.html">Podcast</a>
                 <a class="nav-item nav-link" href="about.html">About</a>
                 <a class="nav-item nav-link" href="contact.html">Contact</a>
             </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
     </nav>
 
 
-    <div class="container mt-3">
+    <div class="container-fluid mt-3">
             <div class="card-deck">
                     <a href="news.html" class="card blogCard text-light">
                         <div class="card-header">
@@ -61,17 +81,27 @@
             </div>
     </div>
 
-    <footer>
-        <div class="container text-center">
+    <footer class="mt-auto">
+        <div class="container text-center text-light mb-3">
             <div class="row">
                 <div class="col-4">
-                    Links
+                    <h5>Links</h5>
+                    <a class="btn footerLink" href="https://spotify.com"><i class="fa fa-spotify"></i></a>
+                    <a class="btn footerLink" href="https://podcasts.apple.com/us/genre/podcasts/id26"><i
+                            class="fa fa-apple"></i></a>
+                    <a class="btn footerLink" href="https://youtube.com"><i class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-4">
-                    Social
+                    <h5>Social</h5>
+                    <a class="btn footerSocial" href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn footerSocial" href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn footerSocial" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
                 </div>
                 <div class="col-4">
-                    Contact
+                    <h5>Contact Us</h5>
+                    <a href="mailto:email@gmail.com">email@gmail.com</a>
+                    <br>
+                    <a href="contact.html">Contact Page</a>
                 </div>
             </div>
         </div>

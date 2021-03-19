@@ -5,7 +5,11 @@
 
 body {
     background-color: #121212;
+    padding-top: 65px; 
+}
 
+.homeBody {
+    padding-top: 0;
 }
 
 
@@ -77,4 +81,17 @@ hr {
     object-fit: cover;
     width: 100%;
     height: 15vw;
+}
+
+.bgGradient {
+    background-image: linear-gradient(to bottom, #494040, #272727);
+}
+
+.bgNavbarOpaque {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.btnCustom {
+    background-color: #73a88e;
+    color: #f8f9fa;
 }

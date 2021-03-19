@@ -6,27 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 
 
     <title>Document</title>
 </head>
 
-<body>
-
-    <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
-      <a class="navbar-brand" href="index.html">Tiger!</a>
+<body class="d-flex flex-column min-vh-100"> 
+    <nav id="homeNavbar" class="navbar fixed-top navbar-expand-md navbar-dark mb-5 bg-dark">
+        <a class="navbar-brand" href="index.html">Tiger!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="blogPage.html">Blog</a>
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link d-block d-md-none" href="blogPage.html">Blog</a>
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link d-none d-md-block" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog <span><i class="fa fa-sort-desc"></i></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="news.html">News</a>
+                        <a class="dropdown-item" href="interviews.html">Interviews</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="allPage.html">All</a>
+                    </div>
+                </div>
                 <a class="nav-item nav-link" href="podcast.html">Podcast</a>
-                <a class="nav-item nav-link active" href="#">About</a>
+                <a class="nav-item nav-link" href="about.html">About</a>
                 <a class="nav-item nav-link" href="contact.html">Contact</a>
             </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
     </nav>
 
@@ -37,10 +57,36 @@
 
                 <hr>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, voluptatem ducimus? Eos eaque id, illo iste, veritatis omnis laudantium molestias quis nam reprehenderit dolorem aut. Sequi, beatae minima laboriosam, distinctio sunt et cum dolor autem ad nesciunt hic voluptate tenetur minus nostrum. Pariatur quam, perferendis quos, consequatur unde veniam doloremque reprehenderit deleniti nobis, est quis exercitationem. Quia amet quas dolorum voluptatem, aspernatur architecto voluptate, earum odit sunt reiciendis pariatur. Eaque, esse ratione fuga repudiandae vitae, nobis id possimus perferendis accusamus delectus assumenda autem, reiciendis explicabo consectetur dolorum quae ea temporibus? Optio quibusdam ut sunt dolor animi adipisci accusantium rerum exercitationem neque eveniet asperiores natus, earum error eius assumenda, veniam odio enim, impedit alias totam! Illum minima libero ut? Culpa dolores quia, inventore nobis, odit quaerat ipsum atque sed, animi soluta dolore? Reiciendis dolorum temporibus doloremque eos nihil, consectetur, dignissimos mollitia soluta explicabo non labore atque quod culpa. Eius id suscipit rerum voluptatum sed accusantium, velit quibusdam, delectus similique officia laborum? Voluptatem, veritatis. Sequi, laborum nihil. Magni non libero, maiores earum voluptates quam? Maiores optio unde quas quisquam natus consectetur accusantium veniam rerum. Voluptates voluptatem eum quo, modi nesciunt eos animi ad esse eius culpa itaque dicta nemo. Voluptatibus, ut. Quas placeat est saepe asperiores tempora debitis ex accusamus porro facere vero odio, sint provident officia nostrum ullam pariatur aperiam quod minus minima assumenda laboriosam, veniam sunt. Aliquid reprehenderit eum nihil eius saepe porro voluptas dicta architecto nemo quia possimus deserunt veritatis distinctio, ducimus quisquam rerum totam laudantium ea magni doloribus molestiae recusandae. Reprehenderit facilis autem iure doloremque sit quidem recusandae maxime, ex laboriosam voluptates assumenda unde quo quibusdam velit vitae fugiat architecto, illo aperiam! Ex nesciunt ipsam a quidem corrupti? Quas quo animi cum ab blanditiis neque minima ex, iste nostrum impedit ut autem enim aliquam ullam sed quasi? Eos.</p>
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, voluptatem ducimus? Eos eaque id, illo iste, veritatis omnis laudantium molestias quis nam reprehenderit dolorem aut. Sequi, beatae minima laboriosam, distinctio sunt et cum dolor autem ad nesciunt hic voluptate tenetur minus nostrum. Pariatur quam, perferendis quos, consequatur unde veniam doloremque reprehenderit deleniti nobis, est quis exercitationem. Quia amet quas dolorum voluptatem, aspernatur architecto voluptate, earum odit sunt reiciendis pariatur. Eaque, esse ratione fuga repudiandae vitae, nobis id possimus perferendis accusamus delectus assumenda autem, reiciendis explicabo consectetur dolorum quae ea temporibus? Optio quibusdam ut sunt dolor animi adipisci accusantium rerum exercitationem neque eveniet asperiores natus, earum error eius assumenda, veniam odio enim, impedit alias totam! Illum minima libero ut? Culpa dolores quia, inventore nobis, odit quaerat ipsum atque sed, animi soluta dolore? Reiciendis dolorum temporibus doloremque eos nihil, consectetur, dignissimos mollitia soluta explicabo non labore atque quod culpa. Eius id suscipit rerum voluptatum sed accusantium, velit quibusdam, delectus similique officia laborum? Voluptatem, veritatis. Sequi, laborum nihil. Magni non libero, maiores earum voluptates quam? Maiores optio unde quas quisquam natus consectetur accusantium veniam rerum. Voluptates voluptatem eum quo, modi nesciunt eos animi ad esse eius culpa itaque dicta nemo. Voluptatibus, ut. Quas placeat est saepe asperiores tempora debitis ex accusamus porro facere vero odio, sint provident officia nostrum ullam pariatur aperiam quod minus minima assumenda laboriosam, veniam sunt. Aliquid reprehenderit eum nihil eius saepe porro voluptas dicta architecto nemo quia possimus deserunt veritatis distinctio, ducimus quisquam rerum totam laudantium ea magni doloribus molestiae recusandae. Reprehenderit facilis autem iure doloremque sit quidem recusandae maxime, ex laboriosam voluptates assumenda unde quo quibusdam velit vitae fugiat architecto, illo aperiam! Ex nesciunt ipsam a quidem corrupti? Quas quo animi cum ab blanditiis neque minima ex, iste nostrum impedit ut autem enim aliquam ullam sed quasi? Eos.</p>
             </div>
         </div>
     </div>
+
+    <footer class="mt-auto">
+        <div class="container text-center text-light mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <h5>Links</h5>
+                    <a class="btn footerLink" href="https://spotify.com"><i class="fa fa-spotify"></i></a>
+                    <a class="btn footerLink" href="https://podcasts.apple.com/us/genre/podcasts/id26"><i
+                            class="fa fa-apple"></i></a>
+                    <a class="btn footerLink" href="https://youtube.com"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-4">
+                    <h5>Social</h5>
+                    <a class="btn footerSocial" href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn footerSocial" href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn footerSocial" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div class="col-4">
+                    <h5>Contact Us</h5>
+                    <a href="mailto:email@gmail.com">email@gmail.com</a>
+                    <br>
+                    <a href="contact.html">Contact Page</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
