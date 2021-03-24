@@ -13,19 +13,33 @@ body {
 }
 
 .bodyA {
-    background-color: #121212;
-    /* background-color: #073D3D; */
-    /* background-color: #003D3D; */
-    /* background-color: #0076CE; */
-    /* background-color: #018a8a; */
+    /* background-color: #c9655a; */
+    background-color: #cf8b84;
     padding-top: 65px; 
 }
 .bodyB {
+    /* background-color: #c9655a; */
+    background-color: #D67147;
+    padding-top: 65px; 
+}
+.bodyDark{
+    background-color: #121212;
+    padding-top: 65px; 
+}
+.bodyC {
     background-color: #4b2c53;
-    /* background-color: #073D3D; */
-    /* background-color: #003D3D; */
-    /* background-color: #0076CE; */
-    /* background-color: #018a8a; */
+    padding-top: 65px; 
+}
+.bodyD {
+    background-color: #121212;
+    padding-top: 65px; 
+}
+.bodyE {
+    background-color: #4040A1;
+    padding-top: 65px; 
+}
+.bodyF {
+    background-color: #008fd1;
     padding-top: 65px; 
 }
 
@@ -152,20 +166,29 @@ hr {
 }
 
 .bgColorA {
-    /* background-image: linear-gradient(to bottom, #494040, #272727); */
-    background-color: #003D3D;
+    background-color: #92a8d1;
 }
 .bgColorB {
-    /* background-image: linear-gradient(to bottom, #494040, #272727); */
-    background-color: #3B876B;
+    /* background-color: #3B876B; */
+    background-color: #c94c4c;
 }
 .bgColorC {
-    /* background-image: linear-gradient(to bottom, #494040, #272727); */
     background-color: #73a88e;
+}
+.bgColorD {
+    /* background-color: #003D3D; */
+    background-color: #92a8d1;
+    
+}
+.bgColorE {
+    background-color: #386FA1;
+}
+.bgColorF {
+   background-color: #7DF9FF;
 }
 
 .bgNavbarOpaque {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.3);
 }
 
 .btnCustom {
@@ -177,25 +200,25 @@ hr {
 }
 
 .btnCustomA {
-    background-color: #73a88e;
-    /* background-color: #18D6D6; */
-    /* background-color: #4170A3; */
+    /* background-color: #73a88e; */
+    background-color: #034f84;
     color: #f8f9fa;
-    /* border: solid 1px black; */
 }
 .btnCustomB {
-    /* background-color: #73a88e; */
-    background-color: rgb(255,244,79);
-    /* background-color: #18D6D6; */
-    /* background-color: #4170A3; */
-    color: #f8f9fa;
-    /* border: solid 1px black; */
+    /* background-color: #42C9B5; */
+    background-color: #71cc94;
 }
 .btnCustomC {
-    /* background-color: #73a88e; */
     background-color: rgb(223, 212, 63);
-    /* background-color: #18D6D6; */
-    /* background-color: #4170A3; */
     /* color: #f8f9fa; */
-    /* border: solid 1px black; */
+}
+.btnCustomD {
+    background-color: #034f84;
+    color: #f8f9fa;
+}
+.btnCustomE {
+    background-color: #fefbd8;
+}
+.btnCustomF {
+    background-color: #27afe9;
 }
