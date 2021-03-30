@@ -1,16 +1,8 @@
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
-const row1 = document.querySelector('#row1');
-const row2 = document.querySelector('#row2');
-const row3 = document.querySelector('#row3');
-const row4 = document.querySelector('#row4');
-const row5 = document.querySelector('#row5');
-const row6 = document.querySelector('#row6');
-
 const container = document.querySelector('#rowContainer')
 
-let fiveAndSix;
 let size;
 
 
@@ -100,107 +92,118 @@ const makeRow = (num) => {
         return row;
 }
 
+const makeCol = (cols, size) => {
+        const col = document.createElement('div');
+        col.className = `col col-${size}-${cols} pl-0`;
+        return col;
+}
+
+
+
 
 
 const lorem1 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.';
 const lorem2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, reprehenderit necessitatibus tempora error dolor, illum explicabo amet voluptatem, ut vitae ipsa ullam veritatis officia. Alias dolore repudiandae a nisi, quam excepturi! Nemo exercitationem eos non, in rem ad maxime veritatis!';
 const lorem3 = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente suscipit temporibus consectetur, necessitatibus dolorem quas esse assumenda dicta est aut harum sequi pariatur quae id odit natus iusto. Eum omnis, harum consequuntur nesciunt deserunt vel repudiandae accusamus corrupti, eius eveniet impedit, ullam molestiae voluptatibus assumenda officia nostrum quo labore neque incidunt atque illo cum debitis. Modi dolore quam accusantium ab.';
 
-const card1 = makeCard('Lorem Ipsum Title 1', lorem1, 'https://picsum.photos/650/1200');
-const card2 = makeCard('Lorem Ipsum Title 2', lorem3, 'https://picsum.photos/800/1000');
-const card3 = makeCard('Lorem Ipsum Title 3', lorem2, 'https://picsum.photos/900');
-const card4 = makeCard('Lorem Ipsum Title 4', lorem2, 'https://picsum.photos/1920/1080');
-const card5 = makeCard('Lorem Ipsum Title 5', lorem3, 'https://picsum.photos/850');
-const card6 = makeCard('Lorem Ipsum Title 6', lorem1, 'https://picsum.photos/1000');
-const card7 = makeCard('Lorem Ipsum Title 7', lorem3, 'https://picsum.photos/650/1200');
-const card8 = makeCard('Lorem Ipsum Title 8', lorem1, 'https://picsum.photos/800/1000');
-const card9 = makeCard('Lorem Ipsum Title 9', lorem3, 'https://picsum.photos/900');
-const card10 = makeCard('Lorem Ipsum Title 10', lorem1, 'https://picsum.photos/1920/1080');
-const card11 = makeCard('Lorem Ipsum Title 11', lorem1, 'https://picsum.photos/850');
-const card12 = makeCard('Lorem Ipsum Title 12', lorem2, 'https://picsum.photos/1000');
+// cards are declared so that they have value of undefined, else will throw error later if card does not exist
+let card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12;
+
+card1 = makeCard('Lorem Ipsum Title 1', lorem1, 'https://picsum.photos/650/1200');
+card2 = makeCard('Lorem Ipsum Title 2', lorem3, 'https://picsum.photos/800/1000');
+card3 = makeCard('Lorem Ipsum Title 3', lorem2, 'https://picsum.photos/900');
+card4 = makeCard('Lorem Ipsum Title 4', lorem2, 'https://picsum.photos/1920/1080');
+card5 = makeCard('Lorem Ipsum Title 5', lorem3, 'https://picsum.photos/850');
+card6 = makeCard('Lorem Ipsum Title 6', lorem1, 'https://picsum.photos/1000');
+card7 = makeCard('Lorem Ipsum Title 7', lorem3, 'https://picsum.photos/650/1200');
+card8 = makeCard('Lorem Ipsum Title 8', lorem1, 'https://picsum.photos/800/1000');
+card9 = makeCard('Lorem Ipsum Title 9', lorem3, 'https://picsum.photos/900');
+card10 = makeCard('Lorem Ipsum Title 10', lorem1, 'https://picsum.photos/1920/1080');
+card11 = makeCard('Lorem Ipsum Title 11', lorem1, 'https://picsum.photos/850');
+// card12 = makeCard('Lorem Ipsum Title 12', lorem2, 'https://picsum.photos/1000');
 
 
 
-const deck1 = makeDeck();
-const deck2 = makeDeck();
-const deck3 = makeDeck();
-const deck4 = makeDeck();
-row1.appendChild(deck1);
-row2.appendChild(deck2);
-row3.appendChild(deck3);
-row4.appendChild(deck4);
 
+const twoCardDeck = (cardA, cardB, rowNum) => {
+        if((cardA) && (cardB)){
+                const row = makeRow(rowNum);
+                const deck = makeDeck(rowNum);
+                row.appendChild(deck);
+                container.appendChild(row);
+                deck.appendChild(cardA);
+                deck.appendChild(cardB);
+        } else if((cardA)){
+                const row = makeRow(rowNum);
+                const deck = makeDeck(rowNum);
+                const col = makeCol('6', 'sm');
+                row.appendChild(col);
+                col.appendChild(deck);
+                container.appendChild(row);
+                deck.appendChild(cardA);    
+        }
+}
+
+const threeCardDeck = (cardA, cardB, cardC, rowNum) => {
+        if((cardA) && (cardB) && (cardC)){
+                const row = makeRow(rowNum);
+                const deck = makeDeck(rowNum);
+                row.appendChild(deck);
+                container.appendChild(row);
+                deck.appendChild(cardA);
+                deck.appendChild(cardB);
+                deck.appendChild(cardC);
+        } else if((cardA) && (cardB)){
+                const row = makeRow(rowNum);
+                const deck = makeDeck(rowNum);
+                const col = makeCol('8', 'lg');
+                row.appendChild(col);
+                col.appendChild(deck);
+                container.appendChild(row);
+                deck.appendChild(cardA);    
+                deck.appendChild(cardB);    
+        } else if(cardA){
+                const row = makeRow(rowNum);
+                const deck = makeDeck(rowNum);
+                const col = makeCol('4', 'lg');
+                row.appendChild(col);
+                col.appendChild(deck);
+                container.appendChild(row);
+                deck.appendChild(cardA);  
+        }
+}
 
 const mdFunc = () => {
-        if (!fiveAndSix){
-                deck1.appendChild(card1);
-                deck1.appendChild(card2);
-        
-                deck2.appendChild(card3);
-                deck2.appendChild(card4);
-        
-                deck3.appendChild(card5);
-                deck3.appendChild(card6);
-        
-                deck4.appendChild(card7);
-                deck4.appendChild(card8);
-        
-                const row5 = makeRow('5');
-                const deck5 = makeDeck('5');
-                row5.appendChild(deck5);
-                container.appendChild(row5);
-                deck5.appendChild(card9);
-                deck5.appendChild(card10);
-        
-                const row6 = makeRow('6');
-                const deck6 = makeDeck('6');
-                row6.appendChild(deck6);
-                container.appendChild(row6);
-                deck6.appendChild(card11);
-                deck6.appendChild(card12);
-
-                fiveAndSix = true;
-        } else {
-                deck1.appendChild(card1);
-                deck1.appendChild(card2);
-        
-                deck2.appendChild(card3);
-                deck2.appendChild(card4);
-        
-                deck3.appendChild(card5);
-                deck3.appendChild(card6);
-        
-                deck4.appendChild(card7);
-                deck4.appendChild(card8);
-
-                const deck5 = document.querySelector('#deck5');
-                deck5.appendChild(card9);
-                deck5.appendChild(card10);
-
-                const deck6 = document.querySelector('#deck6');
-                deck6.appendChild(card11);
-                deck6.appendChild(card12);
-        }
+        while(container.firstChild){
+                container.removeChild(container.firstChild)
+        }       
+        twoCardDeck(card1, card2, '1');
+        twoCardDeck(card3, card4, '2');
+        twoCardDeck(card5, card6, '3');
+        twoCardDeck(card7, card8, '4');
+        twoCardDeck(card9, card10, '5');
+        twoCardDeck(card11, card12, '6');
 }
 
 
 const lgFunc = () => {
-        deck1.appendChild(card1);
-        deck1.appendChild(card2);
-        deck1.appendChild(card3);
-        
-        deck2.appendChild(card4);
-        deck2.appendChild(card5);
-        deck2.appendChild(card6);
-        
-        deck3.appendChild(card7);
-        deck3.appendChild(card8);
-        deck3.appendChild(card9);
-        
-        deck4.appendChild(card10);
-        deck4.appendChild(card11);
-        deck4.appendChild(card12);
+        while(container.firstChild){
+                container.removeChild(container.firstChild)
+        }
+        threeCardDeck(card1, card2, card3, '1');
+        threeCardDeck(card4, card5, card6, '2');
+        threeCardDeck(card7, card8, card9, '3');
+        threeCardDeck(card10, card11, card12, '4');
 }
+
+
+
+
+
+
+
+
+
 
 if (vw >= 992){    
         size = 'lg';
@@ -216,21 +219,17 @@ $(function(){
                 const width = $(this).width();
                 if (width >= 992){
                         if (size === 'lg'){
-                                console.log('still lg')
                                 return;
                         }
                         if (size === 'md'){
-                                console.log('resize md to lg')
                                 lgFunc();
                                 size = 'lg';
                         }
                 } else {
                         if (size === 'md'){
-                                console.log('still md')
                                 return;
                         }
                         if (size === 'lg'){
-                                console.log('resize lg to md')
                                 mdFunc();
                                 size = 'md';
                         }
