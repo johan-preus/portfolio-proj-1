@@ -6,7 +6,7 @@
 body {
     background-color: #121212;
     /* background-color: #073D3D; */
-    background-color: #003D3D;
+    /* background-color: #003D3D; */
     /* background-color: #0076CE; */
     /* background-color: #018a8a; */
     padding-top: 65px; 
@@ -19,7 +19,7 @@ body {
 .bodyB {
     /* background-color: #c9655a; */
     background-color: #c94c4c;
-    background-image: linear-gradient(to bottom, #f11008, #024434)
+    /* background-image: linear-gradient(to bottom, #f11008, #024434) */
 }
 .bodyDark{
     background-color: #121212;
@@ -125,7 +125,7 @@ html, body {
     font-size: 1.5rem;
 }
 
-.footerDark {
+.aTagDark {
     color: #212529;
 }
 

@@ -15,72 +15,6 @@ let size;
 
 
 
-
-
-
-// const card1Title = 'Lorem Ipsum';
-// const card1H5 = document.createElement('h5');
-// card1H5.className = 'card-title';
-// card1H5.innerHTML = card1Title;
-
-// const card1Content = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta qui nisi, voluptatem recusandae cumque omnis non ratione soluta velit praesentium.';
-// const card1P = document.createElement('p');
-// card1P.className = 'card-text';
-// card1P.innerHTML = card1Content;
-
-// const card1Body = document.createElement('div');
-// card1Body.className = 'card-body';
-// card1Body.appendChild(card1H5);
-// card1Body.appendChild(card1P);
-
-
-
-// const card1ExcBtn = document.createElement('btn');
-// card1ExcBtn.className = 'btn btnCustom';
-// card1ExcBtn.innerHTML = 'Excerpt';
-
-// const card1FullBtn = document.createElement('a');
-// card1FullBtn.className = 'btn btnCustom';
-// card1FullBtn.innerHTML = 'Full';
-
-// const excDataToggle = document.createAttribute('data-toggle');
-// excDataToggle.value = 'modal';
-// card1ExcBtn.setAttributeNode(excDataToggle);
-// const excDataTarget = document.createAttribute('data-target');
-// excDataTarget.value = '#excerptModal1';
-// card1ExcBtn.setAttributeNode(excDataTarget);
-
-// const fullHref = document.createAttribute('href');
-// fullHref.value = 'blogContent.html';
-// card1FullBtn.setAttributeNode(fullHref);
-
-
-// const card1Footer = document.createElement('div');
-// card1Footer.className = 'card-footer bg-transparent';
-// card1Footer.appendChild(card1ExcBtn);
-// card1Footer.appendChild(card1FullBtn);
-
-
-
-// const card1Img = document.createElement('img');
-// card1Img.className = 'img-fluid card-img-top cardDeckImg';
-// const imgSrc = document.createAttribute('src');
-// imgSrc.value = 'https://picsum.photos/650/1200';
-// card1Img.setAttributeNode(imgSrc);
-// const imgAlt = document.createAttribute('alt');
-// imgAlt.value = 'Blog Picture';
-// card1Img.setAttributeNode(imgAlt);
-
-
-
-// const card1 = document.createElement('div')
-// card1.className = 'card bgGradient';
-// card1.appendChild(card1Img);
-// card1.appendChild(card1Body);
-// card1.appendChild(card1Footer);
-
-
-
 const makeCard = (title, content, image) => {
         const cardTitle = title;
         const cardH5 = document.createElement('h5');
@@ -101,11 +35,11 @@ const makeCard = (title, content, image) => {
 
 
         const cardExcBtn = document.createElement('btn');
-        cardExcBtn.className = 'btn btnCustom mr-1';
+        cardExcBtn.className = 'btn btnCustomF mr-1';
         cardExcBtn.innerHTML = 'Excerpt';
 
         const cardFullBtn = document.createElement('a');
-        cardFullBtn.className = 'btn btnCustom';
+        cardFullBtn.className = 'btn btnCustomF';
         cardFullBtn.innerHTML = 'Full';
 
         const excDataToggle = document.createAttribute('data-toggle');
@@ -140,7 +74,7 @@ const makeCard = (title, content, image) => {
 
 
         const card = document.createElement('div')
-        card.className = 'card bgGradient';
+        card.className = 'card bgColorF';
         card.appendChild(cardImg);
         card.appendChild(cardBody);
         card.appendChild(cardFooter);
@@ -152,7 +86,7 @@ const makeCard = (title, content, image) => {
 
 const makeDeck = (num) => {
         const deck = document.createElement('div');
-        deck.className = 'card-deck mb-4 text-light';
+        deck.className = 'card-deck mb-4';
         if(num){
                 deck.id = `deck${num}`;
         }

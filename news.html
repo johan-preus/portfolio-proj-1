@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
@@ -17,9 +18,9 @@
   <title>Document</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 bodyF">
 
-  <nav id="homeNavbar" class="navbar fixed-top navbar-expand-md navbar-dark mb-5 bg-dark">
+  <nav id="homeNavbar" class="navbar fixed-top navbar-expand-md navbar-dark mb-5 btnCustomF">
     <a class="navbar-brand" href="index.html">Tiger!</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,16 +48,16 @@
       </div>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
   </nav>
 
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb py-1 bg-transparent text-light">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="blogPage.html">Blog</a></li>
-      <li class="breadcrumb-item active" aria-current="page">News</li>
+      <li class="breadcrumb-item"><a class="text-light" href="index.html">Home</a></li>
+      <li class="breadcrumb-item"><a class="text-light" href="blogPage.html">Blog</a></li>
+      <li class="breadcrumb-item active text-dark" aria-current="page">News</li>
     </ol>
   </nav>
 
@@ -435,7 +436,7 @@
         </div>
       </div>
     </div> -->
-  </div> 
+  </div>
 
   <!-- ############################################################################# -->
   <!-- ############################################################################# -->
@@ -466,37 +467,43 @@
   </div>
 
   <footer class="mt-auto">
-    <div class="container text-center text-light mb-3">
-        <div class="row">
-            <div class="col-4">
-                <h5>Links</h5>
-                <a class="btn footerLink" href="https://spotify.com"><i class="fa fa-spotify"></i></a>
-                <a class="btn footerLink" href="https://podcasts.apple.com/us/genre/podcasts/id26"><i
-                        class="fa fa-apple"></i></a>
-                <a class="btn footerLink" href="https://youtube.com"><i class="fa fa-youtube"></i></a>
-            </div>
-            <div class="col-4">
-                <h5>Social</h5>
-                <a class="btn footerSocial" href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
-                <a class="btn footerSocial" href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
-                <a class="btn footerSocial" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-            </div>
-            <div class="col-4">
-                <h5>Contact Us</h5>
-                <a href="mailto:email@gmail.com">email@gmail.com</a>
-                <br>
-                <a href="contact.html">Contact Page</a>
-            </div>
+    <div class="container text-center text-dark mb-3">
+      <div class="row">
+        <div class="col-4">
+          <h5>Links</h5>
+          <a class="btn footerLink" href="https://spotify.com"><i class="fa fa-spotify"></i></a>
+          <a class="btn footerLink" href="https://podcasts.apple.com/us/genre/podcasts/id26"><i
+              class="fa fa-apple"></i></a>
+          <a class="btn footerLink" href="https://youtube.com"><i class="fa fa-youtube"></i></a>
         </div>
+        <div class="col-4">
+          <h5>Social</h5>
+          <a class="btn footerSocial" href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a class="btn footerSocial" href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
+          <a class="btn footerSocial" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="col-4">
+          <h5>Contact Us</h5>
+          <a class="text-light" href="mailto:email@gmail.com">email@gmail.com</a>
+          <br>
+          <a class="text-light" href="contact.html">Contact Page</a>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
 
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-<script src="./js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+  </script>
+  <script src="./js/scripts.js"></script>
 
 </body>
 
