@@ -231,3 +231,36 @@ hr {
 .btnCustomF {
     background-color: #27afe9;
 }
+
+
+.custom-row {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+    margin-x: -15px;
+}
+
+.custom-col-wrapper {
+    flex-basis:1;
+    flex-grow: 1;
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+  
+@media (min-width: 768px) {
+    .custom-col-wrapper {
+      flex-basis: 1;
+      width: 50%;
+    }
+}
+  
+@media (min-width: 992px) {
+    .custom-col-wrapper {
+      flex-basis: 1;
+      width: 33%;
+    }
+}
+  
+.custom-col-wrapper .card {
+    margin: 0 5px;
+}
